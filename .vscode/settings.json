@@ -2,7 +2,8 @@
     "java.project.sourcePaths": [
         "Operators",
         "Loops/Problems",
+        "Loops",
         "Conditional Statements",
-        "Loops"
+        "Number System"
     ]
 }
