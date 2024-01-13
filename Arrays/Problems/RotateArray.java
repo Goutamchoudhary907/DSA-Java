@@ -1,5 +1,6 @@
 /*
- * Rotate the given array by k steps where is non negetive and can also be greater than n (size of array)
+ * Rotate the given array by k steps where k is non negetive and can also be greater than n (size of array)
+  With using another array 
  */
 
 import java.util.Scanner;
