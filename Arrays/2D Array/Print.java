@@ -1,4 +1,13 @@
-public class MultiArrayCreation {
+public class Print {
+    static void printArray(int arr[][]) {
+         for(int i=0;i<arr.length;i++) {
+
+            for(int j=0;j < arr[i].length ;j++) {
+              System.out.print(arr[i][j] +" ");
+            }
+            System.out.println();
+         }
+    }
     public static void main(String[] args) {
         
         int arr [] [] = new int [3] [2];
@@ -14,11 +23,6 @@ public class MultiArrayCreation {
         
 
         // int arr[] [] = { {5,51}, {32,67} ,{55,32}  };
-        for(int i=0;i<3;i++) {
-            for(int j=0;j<2;j++) {
-
-                System.out.println(arr[i][j]);
-            }
-        }
+      printArray(arr);
     }
 }

@@ -1,4 +1,4 @@
-public class ArrayReference {
+public class ShallowCopy {
     
     static void printArray(int [] arr1) {
          for(int i=0;i<arr1.length;i++) {
