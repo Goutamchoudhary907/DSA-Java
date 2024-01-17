@@ -19,7 +19,7 @@ public class ShallowCopy {
     printArray(arr_2);
 
     // Changing some values of array two 
-    arr_2[0]=0;                                      // this make changes in original array baecuse it changes the array present on this reference  
+    arr_2[0]=0;                                      // this make changes in original array because it changes the array present on this reference  
     arr_2[1]=0;                                      // and we only give same reference to both the array not generate actual copy of original array
 
      System.out.println("Original array after changing arr_2:");
