@@ -1,3 +1,9 @@
+/* 
+*
+ *  Sort given array which consist of only 1 and 0, without using Arrays.sort method 
+ * 
+ * In One traversal
+ */
 import java.util.Scanner;
 
 public class SortArrayConsistOf01 {

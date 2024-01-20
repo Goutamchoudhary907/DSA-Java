@@ -1,5 +1,7 @@
 /*
  *  Sort given array which consist of only 1 and 0, without using Arrays.sort method 
+ * 
+ * In Two traversals 
  */
 
 import java.util.Scanner;
