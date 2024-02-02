@@ -1,15 +1,18 @@
 {
     "java.project.sourcePaths": [
+        "String/Problems",
+        "String",
         "Operators",
         "Number System",
         "Loops/Problems",
         "Loops",
         "Conditional Statements",
+        "Collection/ArrayList",
+        "Collection",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
         "Arrays/2D Array",
         "Arrays",
-        "String" ,
-        "String/Problems"
+        "Recursion"
     ]
 }
