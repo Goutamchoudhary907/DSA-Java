@@ -1,3 +1,9 @@
+/*
+ * Euclid's Algorithm : 
+ * GCD(x,y) = GCD (y, x%y)
+ * GCD(x,0) = x
+ */
+
 import java.util.Scanner;
 
 public class GCDByEuclidsAlgorithm {

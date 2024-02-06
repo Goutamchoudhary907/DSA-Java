@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class OccurenceOfElement {
+public class NumberOfOccurenceOfElement {
 
     static int countOccurence(int [] arr, int x) {
             int count=0;
