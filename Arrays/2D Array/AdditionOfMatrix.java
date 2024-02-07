@@ -1,10 +1,7 @@
 import java.util.Scanner;
-
 public class AdditionOfMatrix {
-
     static void printArray(int arr[][]) {
         for (int i = 0; i < arr.length; i++) {
-
             for (int j = 0; j < arr[i].length; j++) {
                 System.out.print(arr[i][j] + " ");
             }
@@ -26,11 +23,9 @@ public class AdditionOfMatrix {
             System.out.println("Sum of matrix 1 and 2:");
             printArray(sum);
         }
-
     }
 
     public static void main(String[] args) {
-
         Scanner Sc = new Scanner(System.in);
         System.out.println("Enter number of rows and columns of martix 1:");
         int r1 = Sc.nextInt();
@@ -43,11 +38,9 @@ public class AdditionOfMatrix {
                 a[i][j] = Sc.nextInt();
             }
         }
-
         System.out.println("Enter number of rows and columns of martix 2:");
         int r2 = Sc.nextInt();
         int c2 = Sc.nextInt();
-
         int b[][] = new int[r2][c2];
         System.out.println("Enter matrix values:");
         for (int i = 0; i < r2; i++) {
@@ -55,14 +48,11 @@ public class AdditionOfMatrix {
                 b[i][j] = Sc.nextInt();
             }
         }
-            Sc.close();
-            System.out.println("Matrix 1:");
-            printArray(a);
-            System.out.println("Matrix 2:");
-            printArray(b);
-
-            addition(a, r1, c1, b, r2, c2);
-
-       
+        Sc.close();
+        System.out.println("Matrix 1:");
+        printArray(a);
+        System.out.println("Matrix 2:");
+        printArray(b);
+        addition(a, r1, c1, b, r2, c2);
     }
 }

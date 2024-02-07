@@ -33,6 +33,7 @@ public class PrefixSumInPlace {
        System.out.println("Original array:");
        printArray(arr);
      int [] pref= prefixSum(arr);
+     System.out.println("Prefix sum:");
       printArray(pref);
  }
 }

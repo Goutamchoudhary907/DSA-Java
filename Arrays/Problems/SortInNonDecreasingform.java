@@ -24,7 +24,7 @@ public class SortInNonDecreasingform {
         }
 
         for(int i=0;i<n;i++) {
-            for(int j=i+1;j<n-1;j++) {
+            for(int j=i+1;j<n;j++) {
               if(arr[i] > arr[j]) {
                 swap(arr, i, j);
               }

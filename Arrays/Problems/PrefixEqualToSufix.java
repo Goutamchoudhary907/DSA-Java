@@ -1,5 +1,5 @@
 /*
- * Check the prefix sum of a part of the array is equal to the suffix su, of rest of the array
+ * Check the prefix sum of a part of the array is equal to the suffix sum of rest of the array
  */
 
 import java.util.Scanner;
