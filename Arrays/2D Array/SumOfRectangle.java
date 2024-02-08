@@ -36,18 +36,12 @@ public class SumOfRectangle {
         int sum = 0;
         findPrefixarr(arr);
         for (int i = l1; i <= l2; i++) {
-            if(r1>=1) {
-        sum += arr[i][r2] -arr [i][r1-1];
+            if(r1>=1) {                            // check if r1 is 0 
+        sum += arr[i][r2] -arr [i][r1-1];          // then we dont need to subactract anything 
         } else{
-            sum += arr[i][r2];
+            sum += arr[i][r2];                     // directly return without subtract r1-1
         }
     }
-        return sum;
-    }
-
-    static int sum3 (int arr[][] ,int l1, int l2, int r1, int r2) {
-        int sum=0;
-        
         return sum;
     }
     public static void main(String[] args) {

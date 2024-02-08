@@ -1,10 +1,9 @@
 import java.util.Scanner;
 import java.util.Arrays;
-
 public class MajorityElement {
     static void printArray(int arr[]) {
         for(int i=0;i<arr.length;i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i] +" ");
         }
     }
     static int majority(int[] arr) {
@@ -17,9 +16,7 @@ public class MajorityElement {
         Scanner Sc = new Scanner(System.in);
         System.out.println("Enter Size of Array:");
         int size = Sc.nextInt();
-
         int arr[] = new int[size];
-
         System.out.println("Enter Elements of Array:");
         for (int i = 0; i < arr.length; i++) {
             arr[i] = Sc.nextInt();

@@ -20,9 +20,10 @@ public class SumOfRecatngleUsingRowColumnPrefix {
                 arr[i][j] += arr[i][j - 1];
             }
         }
-        for (int j = 0; j < c; j++) {
-            for (int i = 1; i < r; i++) {
-                arr[i][j] += arr[i - 1][j];
+        // traverse vertically to calculate column-wise sum
+        for (int j = 0; j < c; j++) {              // fix column 
+            for (int i = 1; i < r; i++) {          // traverse row and add 
+                arr[i][j] += arr[i - 1][j];         // this time column is same row is i-1
 
             }
         }
@@ -31,15 +32,15 @@ public class SumOfRecatngleUsingRowColumnPrefix {
     static int sum(int arr[][], int l1, int l2, int r1, int r2) {
         int ans = 0, sum = 0, up = 0, left = 0, leftUp = 0;
         findPrefixarr(arr);
-        sum = arr[l2][r2];
+        sum = arr[l2][r2];           // prefix sum of matrix till given boundaries
         if (r1 >= 1) {
-            left = arr[l2][r1 - 1];
+            left = arr[l2][r1 - 1];                // minus till previous row
         }
         if (l1 >= 1) {
-            up = arr[l1 - 1][r2];
+            up = arr[l1 - 1][r2];                 // minus till previous col
         }
         if (l1 >= 1 && r1 <= 1) {
-            leftUp = arr[l1 - 1][r1 - 1];
+            leftUp = arr[l1 - 1][r1 - 1];          // add the part which is subtracted two times
         }
         ans = sum - up - left + leftUp;
         return ans;
