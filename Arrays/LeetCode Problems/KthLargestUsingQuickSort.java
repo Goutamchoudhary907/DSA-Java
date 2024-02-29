@@ -11,7 +11,7 @@ public class KthLargestUsingQuickSort {
 
     static int quickselect(int[] nums, int left, int right, int k) {
         int pivot = left;
-        for (int i = left; i <= right; i++) {
+        for (int i = left; i < right; i++) {
             if (nums[i] <= nums[right]) {
                 swap(nums, pivot++, i);
             }

@@ -11,8 +11,10 @@
         "Collection",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
+        "Arrays/GFG Problems" ,
         "Arrays/2D Array",
         "Arrays",
-        "Recursion"
+        "Recursion" ,
+        "String/GFG Problems"
     ]
 }

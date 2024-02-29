@@ -1,5 +1,5 @@
 public class ReverseString {
-  static void reverseString(char s[]) {
+  static void reverseStringS(char s[]) {
 
     int i = 0, j = s.length - 1;
     while (i < j) {
@@ -15,7 +15,7 @@ public class ReverseString {
 
     char ch[] = { 'H', 'E', 'L', 'L', 'O' };
     System.out.println(ch);
-    reverseString(ch);
+    reverseStringS(ch);
     System.out.println(ch);
   }
 }

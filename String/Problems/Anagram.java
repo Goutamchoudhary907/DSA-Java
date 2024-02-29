@@ -41,7 +41,7 @@ public class Anagram {
 
     public static void main(String[] args) {
         Scanner Sc = new Scanner(System.in);
-        System.out.println("Enter two Strings:");
+        System.out.println("Enter two Strings in lower case:");
         String s = Sc.nextLine();
         String t = Sc.nextLine();
         Sc.close();
