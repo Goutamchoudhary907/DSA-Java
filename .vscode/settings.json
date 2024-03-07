@@ -1,7 +1,10 @@
 {
     "java.project.sourcePaths": [
         "String/Problems",
+        "String/GFG Problems",
         "String",
+        "Recursion/GFG Problems",
+        "Recursion",
         "Operators",
         "Number System",
         "Loops/Problems",
@@ -11,10 +14,9 @@
         "Collection",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
-        "Arrays/GFG Problems" ,
+        "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Recursion" ,
-        "String/GFG Problems"
+        "Sorting"
     ]
 }

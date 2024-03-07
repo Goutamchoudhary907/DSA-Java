@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class PalindromeWithoutReverse {
-    static boolean retrunPalindrome(String s ,int l ,int r) {
+    static boolean retrunPalindrome(String s ,int l ,int r) {     // l  and r is start and end index to compare to check palindrome 
     if(l>=r) return true;
     return(s.charAt(l)== s.charAt(r) && retrunPalindrome(s, l+1, r-1));
     }
