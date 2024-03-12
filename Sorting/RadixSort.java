@@ -13,7 +13,7 @@ public class RadixSort {
         int n = arr.length;
         int output[] = new int[n];
         int count[] = new int[10];
-        for (int i = 0; i < arr.length; i++) { // if arr[i]=105 and place is 1 , we need count[5]++ , if place is 10 ->
+        for (int i = 0; i < arr.length; i++) { // if arr[i]=105 and place is 1 , we need count[5]++ , if place is 10(tens) ->
                                                // count[0]++
             count[(arr[i] / place) % 10]++;
         }
