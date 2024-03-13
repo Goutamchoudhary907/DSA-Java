@@ -15,10 +15,7 @@ public class StrangeSortCopy {
         }
         }
     }
-    static void strangeSort2 (int A[], int N, int K)
-    {
-         // your code here
-        // int ind1 = 0, ind2 = 0;
+    static void strangeSort2 (int A[], int N, int K) {        // optimised
         int value = A[K-1];
         A[K-1]=Integer.MAX_VALUE;
         
