@@ -1,21 +1,8 @@
 public class SortString {
-    static String sortString(String s) {
-      char ch[]=s.toCharArray();
-      for(int i=0;i<ch.length;i++) {
-      for(int j=i+1;j<ch.length;j++) {
-       if(ch[i] > ch[j]) {
-        char temp=ch[i] ;
-        ch[i]=ch[j];
-        ch[j]=temp;
-       }
-      }
-      }
-      return ch.toString();
-     }
      static String soort(String inputString) {
         char[] charArray = inputString.toCharArray();
 
-        // Bubble sort (for illustration purposes)
+        // Bubble sort (for illustration purposes)         // or directly use Arrays.sort(charArray)
         for (int i = 0; i < charArray.length; i++) {
             for (int j = i + 1; j < charArray.length; j++) {
                 if (charArray[i] > charArray[j]) {
@@ -25,7 +12,7 @@ public class SortString {
                 }
             }
      }
-     return charArray.toString();
+     return new String(charArray);
     }
   public static void main(String[] args) {
     String s="edcab";
