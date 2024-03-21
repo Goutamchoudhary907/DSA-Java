@@ -3,6 +3,10 @@
         "String/Problems",
         "String/GFG Problems",
         "String",
+        "Sorting/Problems",
+        "Sorting/GFG Problems",
+        "Sorting",
+        "Recursion/Leetcode Problems",
         "Recursion/GFG Problems",
         "Recursion",
         "Operators",
@@ -17,9 +21,7 @@
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Sorting" ,
-        "Sorting/Problems" , 
-        "Recursion/Leetcode Problems" ,
-        "Sorting/GFG Problems"
+        "Searching" ,
+        "Searching/Problems"
     ]
 }
