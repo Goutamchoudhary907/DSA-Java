@@ -1,5 +1,7 @@
 /*Leetcode 240 
- * row wise sorted and column wise also sorted 
+  Integers in each row are sorted in ascending from left to right.
+  
+  Integers in each column are sorted in ascending from top to bottom.
  */
 public class SearchIn2DArray {
    public static boolean searchMatrix(int arr[][], int target) {

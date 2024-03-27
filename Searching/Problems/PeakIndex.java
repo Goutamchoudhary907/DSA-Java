@@ -1,4 +1,4 @@
-// Peak inndex in mountain array 
+// Peak index in mountain array 
 
 public class PeakIndex {
     public static int peakIndex(int arr[]) {
