@@ -6,6 +6,9 @@
         "Sorting/Problems",
         "Sorting/GFG Problems",
         "Sorting",
+        "Searching/Problems",
+        "Searching/GFG Problems",
+        "Searching",
         "Recursion/Leetcode Problems",
         "Recursion/GFG Problems",
         "Recursion",
@@ -21,8 +24,6 @@
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Searching" ,
-        "Searching/Problems" ,
-        "Searching/GFG Problems"
+        "Linked List"
     ]
 }
