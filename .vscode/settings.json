@@ -25,6 +25,7 @@
         "Arrays/2D Array",
         "Arrays",
         "Linked List" ,
-        "Linked List/Leetcode Problems" ,
-    ]
+        "Linked List/Leetcode Problems" 
+    ],
+    "java.debug.settings.onBuildFailureProceed": true
 }
