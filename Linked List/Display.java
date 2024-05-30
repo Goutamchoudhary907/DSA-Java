@@ -15,8 +15,8 @@ public class Display {
 
  public static void displayRecursivly(Node head) {
    if(head ==null) return ;
-   System.out.print(head.data+" ");
    displayRecursivly(head.next);
+   System.out.print(head.data+" ");
  }
     public static void main(String[] args) {
         Node a = new Node(5);
