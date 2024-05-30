@@ -8,31 +8,6 @@ public class OddEvenList {
         }
        }
 
-    //    public static ListNode oddEven(ListNode head) {
-    //     ListNode temp=head;
-    //     ListNode odd=temp;
-    //     while (temp!=null) {
-    //         if (temp.data %2 != 0) {
-    //              odd=temp;
-    //             break;
-    //         }
-    //         temp=temp.next;
-    //     }
-    //        temp=head;
-    //        ListNode even=temp;
-    //     while(temp!=null) {
-    //         if(temp.data %2 ==0) {
-    //             even=temp;
-    //             break;
-    //         }
-    //        temp=head;
-    //        if(odd.next.data %2 ==0) {
-    //         even.next=odd.next;
-    //         odd=odd.next.next;
-    //        }
-            
-    //     }
-    //    }
 
         public static ListNode oddEvenList(ListNode head) {
             if(head==null || head.next==null) return head;

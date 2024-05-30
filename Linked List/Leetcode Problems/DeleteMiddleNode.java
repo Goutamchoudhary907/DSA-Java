@@ -20,8 +20,8 @@ public class DeleteMiddleNode {
         if(head.next ==null) {                   //single element list
             return null;          
         }
-        while (fast.next.next!= null && fast.next.next.next!=null)  {
-            slow=slow.next;
+        while (fast.next.next!= null && fast.next.next.next!=null)  {    // for odd fast.next.next.next !=null 
+            slow=slow.next;                                              // for eve fast.next.next !=null 
             fast=fast.next.next;
         }
         slow.next=slow.next.next;

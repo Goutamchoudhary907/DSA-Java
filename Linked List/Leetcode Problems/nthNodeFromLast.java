@@ -49,8 +49,9 @@ public class nthNodeFromLast {
          c.next=d;
          d.next=e;
          e.next=f;
-        //  Node temp=nthNode(a,3);
-         Node temp=nthNode2(a,3) ;
+         Node temp=nthNode(a,6);
+         Node temp2=nthNode2(a,6) ;
          System.out.println(temp.data);
+         System.out.println(temp2.data);  
     }
 }

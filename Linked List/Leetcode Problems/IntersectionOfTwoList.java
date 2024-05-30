@@ -8,6 +8,14 @@ public class IntersectionOfTwoList {
             next = null;
         }
     }
+    public static void print(ListNode head){
+     ListNode temp=head;
+     while(temp!=null) {
+        System.out.print(temp.val +" ");
+        temp=temp.next;
+     }
+     System.out.println();
+    }
 
     public static int size(ListNode head) {
         ListNode temp = head;
@@ -56,7 +64,11 @@ public class IntersectionOfTwoList {
         // e.next=f;
         ListNode g = new ListNode(3);
         g.next = d;
+        System.out.print("List 1: ");
+        print(a);
+        System.out.print("List 2: ");
+        print(g);
         ListNode ans = getIntersectionNode(a, g);
-        System.out.println(ans.val);
+        System.out.println("Intersection node:"+ans.val);
     }
 }
