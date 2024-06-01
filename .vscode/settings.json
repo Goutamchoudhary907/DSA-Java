@@ -16,6 +16,8 @@
         "Number System",
         "Loops/Problems",
         "Loops",
+        "Linked List/Leetcode Problems",
+        "Linked List/Doubly LinkedList",
         "Conditional Statements",
         "Collection/ArrayList",
         "Collection",
@@ -24,8 +26,7 @@
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Linked List" ,
-        "Linked List/Leetcode Problems" 
+        "Linked List"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }

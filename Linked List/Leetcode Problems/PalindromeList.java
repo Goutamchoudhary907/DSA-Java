@@ -53,6 +53,27 @@ public class PalindromeList {
       return true;
       }
     
+
+      public static boolean palindrome2(Node head) {
+        Node slow=head;
+        Node fast=head;
+        while (fast.next !=null && fast.next.next!=null) {
+          slow=slow.next;
+          fast=fast.next.next;
+        }
+        Node temp=reverseIterator(slow.next);
+        slow.next=temp;
+
+        Node t1=head;
+        Node t2=slow.next;
+
+        while (t2!=null) {
+          if(t1.data !=t2.data) return false;
+          t1=t1.next;
+          t2=t2.next;
+        }
+        return true;
+      }
       public static void main(String[] args) {
         Node a = new Node(1);
         Node b = new Node(2);
@@ -70,5 +91,6 @@ public class PalindromeList {
         f.next=g;
         display(a);
        System.out.println(palindrome(a));
+       System.out.println(palindrome2(a));
 }
 }
