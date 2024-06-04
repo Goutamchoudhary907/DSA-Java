@@ -1,4 +1,4 @@
-public class Basics {
+public class BasicsLinkedList {
     public static class  Node{
         int data;       //value
         Node next;      //address of next node
