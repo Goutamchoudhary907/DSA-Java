@@ -24,5 +24,6 @@ public class RemoveSubsequence {
         for(int i=0;i<res.length;i++) {
             System.out.print(res[i] +" ");
         }
+        System.out.println();
     }
 }
