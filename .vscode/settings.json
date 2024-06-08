@@ -4,6 +4,8 @@
         "String/GFG Problems",
         "String",
         "Stacks/Problems",
+        "Stacks/Expressions",
+        "Stacks",
         "Sorting/Problems",
         "Sorting/GFG Problems",
         "Sorting",
@@ -28,7 +30,7 @@
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Stacks"
+        "Queue"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
