@@ -16,6 +16,7 @@
         "Recursion/GFG Problems",
         "Recursion",
         "Queue/Problems",
+        "Queue",
         "Operators",
         "Number System",
         "Loops/Problems",
@@ -24,14 +25,14 @@
         "Linked List/Doubly LinkedList",
         "Linked List",
         "Conditional Statements",
+        "Collection/HashMap",
         "Collection/ArrayList",
-        "Collection",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Queue"
+        "Collection"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
