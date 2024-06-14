@@ -45,6 +45,7 @@ public class BasicMethods {
        /// traverse 
        for(String key: mp.keySet()) {
         System.out.printf("Age of %s is %d\n" , key, mp.get(key));
+ System.out.println(mp.entrySet());
        }
     }
 }
