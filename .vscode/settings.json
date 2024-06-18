@@ -25,15 +25,17 @@
         "Linked List/Doubly LinkedList",
         "Linked List",
         "Conditional Statements",
+        "Collection/HashSet",
         "Collection/HashMap/Problems",
         "Collection/HashMap",
         "Collection/ArrayList",
+        "Collection",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Collection"
+        "BackTracking"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
