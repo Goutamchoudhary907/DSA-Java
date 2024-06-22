@@ -30,12 +30,13 @@
         "Collection/HashMap",
         "Collection/ArrayList",
         "Collection",
+        "BackTracking",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "BackTracking"
+        "Trees"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
