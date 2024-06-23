@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class BinaryTree {
     public static class Node{
         int value;

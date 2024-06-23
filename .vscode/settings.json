@@ -1,5 +1,6 @@
 {
     "java.project.sourcePaths": [
+        "Trees",
         "String/Problems",
         "String/GFG Problems",
         "String",
@@ -36,7 +37,7 @@
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Trees"
+        "Tree"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
