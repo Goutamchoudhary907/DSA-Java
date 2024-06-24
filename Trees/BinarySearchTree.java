@@ -1,3 +1,4 @@
+
 public class BinarySearchTree {
     public class Node {
        private int value;
@@ -14,6 +15,9 @@ public class BinarySearchTree {
        }
 }
        private Node root;
+       public Node getRoot(){
+        return root;
+       }
        public int height(Node node){
         if(node==null){
             return -1;
