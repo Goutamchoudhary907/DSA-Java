@@ -14,7 +14,7 @@ public class BinarySearchTree {
         return value;
        }
 }
-       private Node root;
+       private static Node root;
        public Node getRoot(){
         return root;
        }
@@ -85,15 +85,47 @@ public class BinarySearchTree {
         if(node==null) return true;
         return Math.abs(height(node.left) - height(node.right)) <= 1 && balanced(node.left) && balanced(node.right);
     }
+    public static void preetyDisplay(){
+        preetyDisplay(root,0);
+    }
 
+    private static void preetyDisplay(Node node, int level){
+        if(node==null){
+            return;
+        }
+        preetyDisplay(node.right,level+1);
+      if(level!=0){
+        for (int i = 0;i < level-1;i++) {
+          System.out.print("|\t");   
+        }
+        System.out.println("|------>" +node.value);
+      } else{
+        System.out.println(node.value);
+      }
+      preetyDisplay(node.left, level+1);
+    }
+
+    public static boolean search(Node root, int key){       // O(height)
+        if(root==null){
+            return false;
+        }
+        if(root.value >key) {
+            return search(root.left, key);
+        }
+        else if(root.value < key){
+            return search(root.right, key);
+        }
+        return true;
+    }
     public static void main(String[] args) {
         BinarySearchTree tree=new BinarySearchTree();
     //    int arr[]={5,2,7,1,4,6,9,8,3,10};
        int arr[]={1,2,3,4,5,6,7,8,9,10};
     //    tree.insertArray(arr);
         tree.insertSortedArray(arr);
-       tree.display();
-
+          preetyDisplay();
+          
+     System.out.println(search(root, 1));
     }
 }
  

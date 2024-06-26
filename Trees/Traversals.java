@@ -1,3 +1,6 @@
+import java.util.LinkedList;
+import java.util.Queue;
+
 public class Traversals {
     public class Node {
         private int value;
@@ -9,7 +12,7 @@ public class Traversals {
           this.value=value;
         }
     }
-    private Node root;
+    private static Node root;
 
     public int height(Node node){
         if(node==null){
@@ -73,9 +76,9 @@ public class Traversals {
     private void inOrder(Node node){
         if(node==null) return;
 
-        preOrder(node.left);
+        inOrder(node.left);
         System.out.print(node.value+" ");
-        preOrder(node.right);
+        inOrder(node.right);
     }
     public void postOrder(){
         postOrder(root);
@@ -84,8 +87,8 @@ public class Traversals {
     private void postOrder(Node node){
         if(node==null) return;
 
-        preOrder(node.left);
-        preOrder(node.right);
+        postOrder(node.left);
+        postOrder(node.right);
         System.out.print(node.value+" ");
     }
   public void display(){
@@ -97,7 +100,33 @@ public class Traversals {
         display(node.left, "Left child of "+ node.value+":");
         display(node.right, "Right child of "+ node.value+":"); 
        }
- 
+     
+       public void printLevelOrder(){
+        printLevelOrder(root);
+       }
+     private static void printLevelOrder(Node root){
+        if(root==null) return;
+        Queue<Node> q=new LinkedList<>();
+        q.add(root);
+        q.add(null);
+
+        while (!q.isEmpty()) {
+            Node currNode =q.remove();
+            if(currNode==null){
+                System.out.println();
+                if(q.isEmpty()) break;
+                else q.add(null);
+            }else {
+                System.out.print(currNode.value+" ");
+                if(currNode.left !=null){
+                  q.add(currNode.left);
+                }
+                if(currNode.right !=null){
+                    q.add(currNode.right); 
+                }
+            } 
+        }
+     }
  public static void main(String[] args) {
     Traversals tr=new Traversals();
     int arr[]={4,8,9,6,7,5,2,0,1,4};
@@ -106,5 +135,7 @@ public class Traversals {
     tr.preOrder();
     tr.inOrder();
     tr.postOrder();
+    System.out.println("Level order:");
+    tr.printLevelOrder();
  }   
 }
