@@ -117,6 +117,43 @@ public class BinarySearchTree {
         }
         return true;
     }
+
+    public static Node delete(Node root , int key){
+        if(root ==null) return null;
+       if(root.value > key) {
+        root.left=delete(root.left, key);
+       } else if(root.value < key){
+        root.right=delete(root.right, key);
+       } 
+       else {  // root.data==key
+         // case 1 no child
+         if(root.left==null && root.right==null) {
+            return null;
+         } 
+
+         // case 2  if one child is exist
+         if(root.left ==null){
+            return root.right;
+         }
+         else if(root.right ==null){
+            return root.left;
+         }
+
+         // case 3
+         Node IS=inOrderSuccessor(root.right);
+         root.value=IS.value;
+         root.right=delete(root.right, IS.value);
+       }
+       return root;
+    }
+
+    public static Node inOrderSuccessor(Node node){
+        Node curr=node;
+     while (curr !=null &&curr.left !=null) {
+        curr=curr.left;
+     }
+     return curr;
+    }
     public static void main(String[] args) {
         BinarySearchTree tree=new BinarySearchTree();
     //    int arr[]={5,2,7,1,4,6,9,8,3,10};
@@ -125,7 +162,11 @@ public class BinarySearchTree {
         tree.insertSortedArray(arr);
           preetyDisplay();
           
-     System.out.println(search(root, 1));
+    //  System.out.println(search(root, 1));
+       delete(root, 9);
+       
+       System.out.println("After delete :");
+       preetyDisplay();
     }
 }
  
