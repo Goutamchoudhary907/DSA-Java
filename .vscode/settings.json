@@ -1,5 +1,7 @@
 {
     "java.project.sourcePaths": [
+        "Trie",
+        "Trees/Problems",
         "Trees",
         "String/Problems",
         "String/GFG Problems",
@@ -25,19 +27,25 @@
         "Linked List/Leetcode Problems",
         "Linked List/Doubly LinkedList",
         "Linked List",
+        "Heaps",
+        "Graphs/ShortestPath Algorithms",
+        "Graphs/Problems",
+        "Graphs",
+        "Dynamic Programming",
         "Conditional Statements",
         "Collection/HashSet",
         "Collection/HashMap/Problems",
         "Collection/HashMap",
         "Collection/ArrayList",
         "Collection",
+        "Basic Questions",
         "BackTracking",
         "Arrays/Problems",
         "Arrays/LeetCode Problems",
         "Arrays/GFG Problems",
         "Arrays/2D Array",
         "Arrays",
-        "Tree"
+        "StriverSheet Basic Questions"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
